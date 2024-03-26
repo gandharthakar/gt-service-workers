@@ -4,7 +4,7 @@
     "short_name": "GT Service Worker",
     "description": "This is simple project of service workers to understand how it is works. How caching works offline.",
     "display": "standalone",
-    "start_url": "http://localhost/gt-service-workers",
+    "start_url": "https://gandharthakar.github.io/gt-service-workers",
     "orientation": "portrait",
     "icons": [
         {
