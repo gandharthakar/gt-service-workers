@@ -1,0 +1,35 @@
+{
+  "name": "gt-service-workers",
+  "version": "1.0.0",
+  "description": "This is simple project of service workers to understand how it is works. How caching works offline.",
+  "main": "index.js",
+  "scripts": {
+    "compile-css": "sass scss/:css/ --style expanded",
+    "prefix-css": "postcss css/**/*.css -u autoprefixer -b 'last 100 versions' --map=false --dir css/",
+    "minify-css": "css-minify -d css/ -o css/",
+    "build-css": "npm-run-all compile-css prefix-css minify-css",
+    "watch": "nodemon --watch scss/ --ext scss --exec \"npm-run-all build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gandharthakar/gt-service-workers.git"
+  },
+  "author": "Gandhar Thakar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gandharthakar/gt-service-workers/issues"
+  },
+  "homepage": "https://github.com/gandharthakar/gt-service-workers#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "css-minify": "^2.0.0",
+    "nodemon": "^3.1.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.72.0"
+  },
+  "browserslist": [
+    "last 100 versions"
+  ]
+}
